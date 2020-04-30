@@ -1,0 +1,4 @@
+pojo\UpdatePlace.class
+pojo\AddPlaceBody.class
+bdd\APIFramework\App.class
+pojo\AddPlaceLocation.class
