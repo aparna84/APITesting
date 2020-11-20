@@ -1,0 +1,705 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-20T17:27:53.155Z",
+        "line": 13,
+        "name": "Verify rates for latest and past dated foreign exchange rates",
+        "description": "",
+        "id": "validate-foreign-exchange-rates-for-positive;verify-rates-for-latest-and-past-dated-foreign-exchange-rates;positive-scenarios;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2031522130,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "get FXRatesAPI",
+            "match": {
+              "location": "StepDefination.get_FXRatesAPI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 43294430,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user calls \"/api/latest\" with http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/api/latest\"",
+                  "offset": 11
+                }
+              ],
+              "location": "StepDefination.user_calls_with_http_request(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4846417026,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the API call got success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 42
+                }
+              ],
+              "location": "StepDefination.the_API_call_got_success_with_status_code(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1042977546,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "\"base\" in response body is \"EUR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"base\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"EUR\"",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefination.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-20T17:28:01.166Z",
+        "line": 14,
+        "name": "Verify rates for latest and past dated foreign exchange rates",
+        "description": "",
+        "id": "validate-foreign-exchange-rates-for-positive;verify-rates-for-latest-and-past-dated-foreign-exchange-rates;positive-scenarios;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8691358,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "get FXRatesAPI",
+            "match": {
+              "location": "StepDefination.get_FXRatesAPI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3238824,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user calls \"/api/2020-05-08\" with http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/api/2020-05-08\"",
+                  "offset": 11
+                }
+              ],
+              "location": "StepDefination.user_calls_with_http_request(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1095118417,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the API call got success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 42
+                }
+              ],
+              "location": "StepDefination.the_API_call_got_success_with_status_code(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 42887407,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "\"base\" in response body is \"EUR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"base\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"EUR\"",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefination.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-20T17:28:02.333Z",
+        "line": 15,
+        "name": "Verify rates for latest and past dated foreign exchange rates",
+        "description": "",
+        "id": "validate-foreign-exchange-rates-for-positive;verify-rates-for-latest-and-past-dated-foreign-exchange-rates;positive-scenarios;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7749104,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "get FXRatesAPI",
+            "match": {
+              "location": "StepDefination.get_FXRatesAPI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 413181,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user calls \"/api/2010-01-14\" with http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/api/2010-01-14\"",
+                  "offset": 11
+                }
+              ],
+              "location": "StepDefination.user_calls_with_http_request(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1034852212,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the API call got success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 42
+                }
+              ],
+              "location": "StepDefination.the_API_call_got_success_with_status_code(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 35899161,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "\"base\" in response body is \"EUR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"base\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"EUR\"",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefination.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-20T17:28:03.410Z",
+        "line": 27,
+        "name": "Verify rates for latest and past dated foreign exchange rates",
+        "description": "",
+        "id": "validate-foreign-exchange-rates-for-positive;verify-rates-for-latest-and-past-dated-foreign-exchange-rates;negative-scenarios;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6481568,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "get FXRatesAPI",
+            "match": {
+              "location": "StepDefination.get_FXRatesAPI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 419899,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user calls \"/api/\" with http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/api/\"",
+                  "offset": 11
+                }
+              ],
+              "location": "StepDefination.user_calls_with_http_request(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected:\u003c400\u003e but was:\u003c200\u003e\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\r\n\tat org.junit.Assert.assertEquals(Assert.java:645)\r\n\tat org.junit.Assert.assertEquals(Assert.java:631)\r\n\tat stepDefinations.StepDefination.the_API_call_got_success_with_status_code(StepDefination.java:49)\r\n\tat ✽.the API call got success with status code 200(file:src/test/java/features/fxRateValidations.feature:20)\r\n",
+              "duration": 1183341526,
+              "status": "failed"
+            },
+            "line": 20,
+            "name": "the API call got success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 42
+                }
+              ],
+              "location": "StepDefination.the_API_call_got_success_with_status_code(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 92378,
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "\"base\" in response body is \"EUR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"base\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"EUR\"",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefination.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-20T17:28:04.614Z",
+        "line": 28,
+        "name": "Verify rates for latest and past dated foreign exchange rates",
+        "description": "",
+        "id": "validate-foreign-exchange-rates-for-positive;verify-rates-for-latest-and-past-dated-foreign-exchange-rates;negative-scenarios;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2924179,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "get FXRatesAPI",
+            "match": {
+              "location": "StepDefination.get_FXRatesAPI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 564904,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user calls \"/api/2020-02-30\" with http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/api/2020-02-30\"",
+                  "offset": 11
+                }
+              ],
+              "location": "StepDefination.user_calls_with_http_request(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected:\u003c400\u003e but was:\u003c200\u003e\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\r\n\tat org.junit.Assert.assertEquals(Assert.java:645)\r\n\tat org.junit.Assert.assertEquals(Assert.java:631)\r\n\tat stepDefinations.StepDefination.the_API_call_got_success_with_status_code(StepDefination.java:49)\r\n\tat ✽.the API call got success with status code 200(file:src/test/java/features/fxRateValidations.feature:20)\r\n",
+              "duration": 1196744156,
+              "status": "failed"
+            },
+            "line": 20,
+            "name": "the API call got success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 42
+                }
+              ],
+              "location": "StepDefination.the_API_call_got_success_with_status_code(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 62705,
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "\"base\" in response body is \"EUR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"base\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"EUR\"",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefination.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-20T17:28:05.814Z",
+        "line": 29,
+        "name": "Verify rates for latest and past dated foreign exchange rates",
+        "description": "",
+        "id": "validate-foreign-exchange-rates-for-positive;verify-rates-for-latest-and-past-dated-foreign-exchange-rates;negative-scenarios;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4514199,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "get FXRatesAPI",
+            "match": {
+              "location": "StepDefination.get_FXRatesAPI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 567144,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user calls \"/api/20100114\" with http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/api/20100114\"",
+                  "offset": 11
+                }
+              ],
+              "location": "StepDefination.user_calls_with_http_request(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected:\u003c400\u003e but was:\u003c200\u003e\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\r\n\tat org.junit.Assert.assertEquals(Assert.java:645)\r\n\tat org.junit.Assert.assertEquals(Assert.java:631)\r\n\tat stepDefinations.StepDefination.the_API_call_got_success_with_status_code(StepDefination.java:49)\r\n\tat ✽.the API call got success with status code 200(file:src/test/java/features/fxRateValidations.feature:20)\r\n",
+              "duration": 1179453817,
+              "status": "failed"
+            },
+            "line": 20,
+            "name": "the API call got success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 42
+                }
+              ],
+              "location": "StepDefination.the_API_call_got_success_with_status_code(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 34152,
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "\"base\" in response body is \"EUR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"base\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"EUR\"",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefination.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-20T17:28:07.008Z",
+        "line": 30,
+        "name": "Verify rates for latest and past dated foreign exchange rates",
+        "description": "",
+        "id": "validate-foreign-exchange-rates-for-positive;verify-rates-for-latest-and-past-dated-foreign-exchange-rates;negative-scenarios;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2288731,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "get FXRatesAPI",
+            "match": {
+              "location": "StepDefination.get_FXRatesAPI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 455171,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user calls \"/api/2022-01-01\" with http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/api/2022-01-01\"",
+                  "offset": 11
+                }
+              ],
+              "location": "StepDefination.user_calls_with_http_request(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1207536131,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the API call got success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 42
+                }
+              ],
+              "location": "StepDefination.the_API_call_got_success_with_status_code(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 31013772,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "\"base\" in response body is \"EUR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"base\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"EUR\"",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefination.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-20T17:28:08.246Z",
+        "line": 31,
+        "name": "Verify rates for latest and past dated foreign exchange rates",
+        "description": "",
+        "id": "validate-foreign-exchange-rates-for-positive;verify-rates-for-latest-and-past-dated-foreign-exchange-rates;negative-scenarios;6",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4700074,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "get FXRatesAPI",
+            "match": {
+              "location": "StepDefination.get_FXRatesAPI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2299369,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user calls \"/api/2010-01-14\" with http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/api/2010-01-14\"",
+                  "offset": 11
+                }
+              ],
+              "location": "StepDefination.user_calls_with_http_request(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 982414612,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the API call got success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 42
+                }
+              ],
+              "location": "StepDefination.the_API_call_got_success_with_status_code(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[EU]R\u003e but was:\u003c[IN]R\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat stepDefinations.StepDefination.in_response_body_is(StepDefination.java:58)\r\n\tat ✽.\"base\" in response body is \"INR\"(file:src/test/java/features/fxRateValidations.feature:21)\r\n",
+              "duration": 24994093,
+              "status": "failed"
+            },
+            "line": 21,
+            "name": "\"base\" in response body is \"INR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"base\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"INR\"",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefination.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Validate foreign exchange rates for positive",
+    "description": "",
+    "id": "validate-foreign-exchange-rates-for-positive",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/fxRateValidations.feature",
+    "tags": []
+  }
+]
